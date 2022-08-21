@@ -1,11 +1,11 @@
 
 
 <template>
-  <HelloWorld/>
+  <Background/>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue"
+import Background from "./components/Background.vue"
 </script>
 <style scoped>
 </style>
