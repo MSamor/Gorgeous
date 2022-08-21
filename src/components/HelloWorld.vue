@@ -2,26 +2,20 @@
   <Particles
     id="tsparticles"
     :particlesInit="particlesInit"
-    :particlesLoaded="particlesLoaded"
     :options="options"
   />
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import { reactive } from "@vue/reactivity";
-import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
-import { tsParticles } from "tsparticles-engine";
+import { Engine, tsParticles } from "tsparticles-engine";
 import { loadHeartShape } from "tsparticles-shape-heart";
+import { loadFull } from "tsparticles";
 loadHeartShape(tsParticles);
 
-const particlesInit = async (engine: Engine) => {
+async function particlesInit(engine: Engine) {
   await loadFull(engine);
-};
-
-const particlesLoaded = async (container: any) => {
-  console.log("Particles container loaded", container);
-};
+}
 
 let options = reactive({
   background: {
@@ -96,6 +90,15 @@ let options = reactive({
     },
   },
 });
+
+export default {
+  setup() {
+    return {
+      options,
+      particlesInit,
+    };
+  },
+};
 </script>
 <style scoped>
 </style>

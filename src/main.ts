@@ -4,5 +4,4 @@ import App from './App.vue'
 
 // 加载粒子动画效果
 import Particles from "vue3-particles";
-const app = createApp(App);
-app.use(Particles).mount('#app')
+createApp(App).use(Particles).mount('#app')
