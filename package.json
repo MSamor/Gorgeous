@@ -9,10 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "tsparticles-shape-heart": "^2.2.2",
+    "tsparticles": "^2.6.0",
     "vue": "^3.2.37",
-    "vue3-particles": "^2.2.2",
-    "tsparticles": "^2.2.2"
+    "vue3-particles": "^2.6.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",

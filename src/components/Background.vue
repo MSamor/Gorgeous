@@ -10,7 +10,7 @@
 import { reactive } from "@vue/reactivity";
 import { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
-import star from "../annimationJS/srar.js"
+import star from "../annimationJS/star.js"
 async function particlesInit(engine: Engine) {
   await loadFull(engine);
 }

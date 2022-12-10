@@ -1,7 +1,7 @@
 export default {
     background: {
         color: {
-            value: "#000",
+            value: "#f1ab37",
         },
     },
     particles: {
