@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
+import 'animate.css';
 import App from './App.vue'
 
 // 加载粒子动画效果

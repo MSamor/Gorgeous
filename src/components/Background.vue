@@ -10,7 +10,8 @@
 import { reactive } from "@vue/reactivity";
 import { Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
-import star from "../annimationJS/star.js"
+import star from "../annimationJS/star.js";
+
 async function particlesInit(engine: Engine) {
   await loadFull(engine);
 }
@@ -27,4 +28,8 @@ export default {
 };
 </script>
 <style scoped>
+#tsparticles {
+  position: fixed;
+  z-index: -10;
+}
 </style>
